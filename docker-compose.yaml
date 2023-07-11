@@ -9,4 +9,7 @@ services:
         INSTALL_COMPONENTS: "app-engine-python"
     ports:
       - "80:5000"
+    environment:
+      - KEYFILE=keyfile
+      - PASSWORD=password
     
