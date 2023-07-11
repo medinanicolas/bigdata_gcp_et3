@@ -1,0 +1,12 @@
+version: "3"
+services:
+  flask:
+    container_name: flask
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        INSTALL_COMPONENTS: "app-engine-python"
+    ports:
+      - "80:5000"
+    
